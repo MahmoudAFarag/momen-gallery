@@ -1,11 +1,13 @@
 import NextLink from "next/link"
 import { Breadcrumb, BreadcrumbItem } from "@chakra-ui/react"
+import { FaPhoneAlt } from "react-icons/fa"
+import { IconContext } from "react-icons"
 
 export default function Navigation() {
   return (
     <Breadcrumb
       separator=""
-      fontSize="0.9rem"
+      fontSize={{ base: "0.8rem", lg: "0.9rem" }}
       textTransform="uppercase"
       m={4}
       fontFamily="primary"
@@ -43,6 +45,9 @@ export default function Navigation() {
         transition="background-color 0.4s ease-in-out"
       >
         <NextLink href="/contact">Contact</NextLink>
+        <IconContext.Provider value={{ style: { marginLeft: "1rem" } }}>
+          <FaPhoneAlt />
+        </IconContext.Provider>
       </BreadcrumbItem>
     </Breadcrumb>
   )

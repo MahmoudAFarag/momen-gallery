@@ -15,12 +15,12 @@ export default function NavigationMobile() {
         <Link _hover={{ textDecoration: "none" }}>All Desgins</Link>
       </NextLink>
       <NextLink href="/about">
-        <Link mt="0.5rem" _hover={{ textDecoration: "none" }}>
+        <Link mt="0.7rem" _hover={{ textDecoration: "none" }}>
           About
         </Link>
       </NextLink>
       <NextLink href="/contact">
-        <Link mt="0.5rem" _hover={{ textDecoration: "none" }}>
+        <Link mt="0.7rem" _hover={{ textDecoration: "none" }}>
           contact
         </Link>
       </NextLink>
