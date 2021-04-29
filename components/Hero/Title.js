@@ -9,7 +9,7 @@ export default function Title() {
       fontSize={{ base: "1.6rem", md: "2.7rem", lg: "4rem" }}
       fontFamily="primary"
       textTransform="uppercase"
-      letterSpacing={{ base: "2px", md: "3px", lg: "5px" }}
+      letterSpacing={{ base: "3px", md: "5px", lg: "5px" }}
     >
       Mo'men Designs
     </Heading>
