@@ -14,7 +14,6 @@ const theme = extendTheme({
     global: {
       body: {
         bg: "#fdf8f5",
-        fontSize: "62.5%",
       },
     },
   },

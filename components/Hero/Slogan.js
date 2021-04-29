@@ -3,9 +3,9 @@ import { Text } from "@chakra-ui/react"
 export default function Slogan() {
   return (
     <Text
-      fontSize={{ base: "0.6rem", md: "0.8rem", lg: "0.9rem" }}
+      fontSize={{ base: "13px", md: "15px", lg: "16px" }}
       fontFamily="primary"
-      letterSpacing="5px"
+      letterSpacing={{ base: "2px", md: "3px", lg: "5px" }}
       textTransform="uppercase"
       mt="0.4rem"
     >
