@@ -9,12 +9,12 @@ export default function FeaturedButton({ scrollToFeatured }) {
       textTransform="uppercase"
       p="1.5rem"
       mt="2rem"
-      bg="secondary"
+      bg="secondaryLight"
       color="background"
       rightIcon={<FaAngleDoubleDown />}
       onClick={scrollToFeatured}
-      _hover={{ bg: "secondaryLight" }}
-      _active={{ bg: "secondaryLight" }}
+      _hover={{ bg: "secondary" }}
+      _active={{ bg: "secondary" }}
     >
       Go to featured
     </Button>
