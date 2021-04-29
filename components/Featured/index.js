@@ -11,12 +11,36 @@ export default function index() {
         my="2rem"
         mx="2rem"
       >
-        <Box bg="tomato" height={{ base: "150", md: "160", lg: "250px" }}></Box>
-        <Box bg="tomato" height={{ base: "150", md: "160", lg: "250px" }}></Box>
-        <Box bg="tomato" height={{ base: "150", md: "160", lg: "250px" }}></Box>
-        <Box bg="tomato" height={{ base: "150", md: "160", lg: "250px" }}></Box>
-        <Box bg="tomato" height={{ base: "150", md: "160", lg: "250px" }}></Box>
-        <Box bg="tomato" height={{ base: "150", md: "160", lg: "250px" }}></Box>
+        <Box
+          data-aos="zoom-in-up"
+          bg="tomato"
+          height={{ base: "150", md: "180", lg: "250px" }}
+        ></Box>
+        <Box
+          data-aos="zoom-in-up"
+          bg="tomato"
+          height={{ base: "150", md: "180", lg: "250px" }}
+        ></Box>
+        <Box
+          data-aos="zoom-in-up"
+          bg="tomato"
+          height={{ base: "150", md: "180", lg: "250px" }}
+        ></Box>
+        <Box
+          data-aos="zoom-in-up"
+          bg="tomato"
+          height={{ base: "150", md: "180", lg: "250px" }}
+        ></Box>
+        <Box
+          data-aos="zoom-in-up"
+          bg="tomato"
+          height={{ base: "150", md: "180", lg: "250px" }}
+        ></Box>
+        <Box
+          data-aos="zoom-in-up"
+          bg="tomato"
+          height={{ base: "150", md: "180", lg: "250px" }}
+        ></Box>
       </SimpleGrid>
     </>
   )
