@@ -7,6 +7,7 @@ export default function NavigationMobile() {
       direction="column"
       alignItems="center"
       mt="1rem"
+      mb="1.3rem"
       fontSize="1rem"
       textTransform="uppercase"
       display={{ base: "flex", md: "none", lg: "none" }}
