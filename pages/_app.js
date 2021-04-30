@@ -1,13 +1,13 @@
-import "@fontsource/montserrat"
-import "@fontsource/montserrat/700.css"
-import "@fontsource/montserrat/900.css"
-
 import { ChakraProvider } from "@chakra-ui/react"
 
 import { useEffect } from "react"
 import AOS from "aos"
 
 import "aos/dist/aos.css"
+
+import "@fontsource/montserrat/400.css"
+import "@fontsource/montserrat/700.css"
+import "@fontsource/montserrat/900.css"
 
 import theme from "../themes/theme"
 

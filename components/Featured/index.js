@@ -31,16 +31,6 @@ export default function index() {
           bg="tomato"
           height={{ base: "150", md: "180", lg: "300px" }}
         ></Box>
-        <Box
-          data-aos="zoom-in-up"
-          bg="tomato"
-          height={{ base: "150", md: "180", lg: "300px" }}
-        ></Box>
-        <Box
-          data-aos="zoom-in-up"
-          bg="tomato"
-          height={{ base: "150", md: "180", lg: "300px" }}
-        ></Box>
       </SimpleGrid>
     </>
   )
