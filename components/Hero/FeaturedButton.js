@@ -4,7 +4,7 @@ import { FaAngleDoubleDown } from "react-icons/fa"
 export default function FeaturedButton({ scrollToFeatured }) {
   return (
     <Button
-      fontSize={{ base: "13px", md: "15px", lg: "16px", "2xl": "25px" }}
+      fontSize={{ base: "13px", md: "15px", lg: "16px", "2xl": "22px" }}
       fontFamily="primary"
       fontWeight="400"
       textTransform="uppercase"

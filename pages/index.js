@@ -1,13 +1,30 @@
+import Head from "next/head"
 import Navbar from "@/components/Navbar"
 import Hero from "@/components/Hero"
 import Featured from "@/components/Featured"
 
-export default function Home() {
+import { getFeaturedDesigns } from "../lib/api"
+
+export default function Home({ designs }) {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Mo'men's Gallery</title>
+      </Head>
       <Navbar />
       <Hero />
-      <Featured />
-    </div>
+      <Featured designs={designs} />
+    </>
   )
+}
+
+export async function getStaticProps() {
+  const { designs } = await getFeaturedDesigns()
+
+  return {
+    props: {
+      designs,
+    },
+    revalidate: 1800,
+  }
 }

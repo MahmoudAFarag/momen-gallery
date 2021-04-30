@@ -16,7 +16,7 @@ export default function Header() {
       ml="4"
       mt="8"
       fontFamily="primary"
-      fontSize={{ base: "1.2rem", lg: "1.5rem" }}
+      fontSize={{ base: "1.2rem", lg: "1.5rem", "2xl": "1.6rem" }}
       fontWeight="700"
       textTransform="uppercase"
       display="inline-block"
