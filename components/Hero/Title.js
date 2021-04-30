@@ -13,6 +13,7 @@ export default function Title() {
         "2xl": "6rem",
       }}
       fontFamily="primary"
+      fontWeight="800"
       textTransform="uppercase"
       letterSpacing={{ base: "3px", md: "5px", lg: "5px", "2xl": "6px" }}
     >
