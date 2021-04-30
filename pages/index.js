@@ -9,7 +9,7 @@ export default function Home({ designs }) {
   return (
     <>
       <Head>
-        <title>Mo'men's Gallery</title>
+        <title>Mo'men's Gallery -- Home</title>
       </Head>
       <Navbar />
       <Hero />
