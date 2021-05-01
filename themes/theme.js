@@ -1,5 +1,9 @@
 import { extendTheme } from "@chakra-ui/react"
 
+import "@fontsource/montserrat/400.css"
+import "@fontsource/montserrat/800.css"
+import "@fontsource/montserrat/900.css"
+
 const theme = extendTheme({
   colors: {
     background: "#fdf8f5",
