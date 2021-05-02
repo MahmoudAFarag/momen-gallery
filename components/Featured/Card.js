@@ -1,18 +1,22 @@
-import NextImage from "next/image"
 import {
   SimpleGrid,
-  Flex,
   Spacer,
   Text,
   Tag,
   TagRightIcon,
   TagLabel,
+  useDisclosure,
 } from "@chakra-ui/react"
-
 import { FaAdobe } from "react-icons/fa"
+
+import DetailsLayout from "./DetailsLayout"
 import Date from "./Date"
+import BoxOverlay from "./BoxOverlay"
+import DesignModal from "./DesignModal"
 
 export default function Card({ design }) {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
   return (
     <>
       <SimpleGrid
@@ -20,20 +24,19 @@ export default function Card({ design }) {
         height={{ base: "160px", md: "180px", lg: "300px", "2xl": "400px" }}
         border="2px solid #4f4846"
       >
-        <NextImage
-          src={design.Image.url}
-          alt={design.Title}
-          layout="fill"
-          objectFit="cover"
+        <BoxOverlay
+          image={design.Image.url}
+          title={design.Title}
+          onOpen={onOpen}
         />
-        <Flex
-          padding="0.5rem"
-          alignItems="center"
-          width="100%"
-          bg="#ece9ec"
-          alignSelf="flex-end"
-          zIndex="2"
-        >
+        <DesignModal
+          title={design.Title}
+          image={design.Image.url}
+          onClose={onClose}
+          isOpen={isOpen}
+        />
+
+        <DetailsLayout>
           <Tag
             variant="solid"
             colorScheme="teal"
@@ -46,7 +49,7 @@ export default function Card({ design }) {
           <Spacer />
           <Text
             fontSize={{ md: "11px", lg: "13px", "2xl": "sm" }}
-            fontWeight="800"
+            fontWeight="700"
             textTransform="uppercase"
             fontFamily="primary"
           >
@@ -55,14 +58,14 @@ export default function Card({ design }) {
           <Spacer />
           <Text
             fontSize={{ md: "11px", lg: "13px", "2xl": "sm" }}
-            fontWeight="800"
+            fontWeight="700"
             fontFamily="primary"
             mr="0.4rem"
             textTransform="uppercase"
           >
             <Date dateString={design.created_at} />
           </Text>
-        </Flex>
+        </DetailsLayout>
       </SimpleGrid>
     </>
   )

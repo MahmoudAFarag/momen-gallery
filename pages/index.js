@@ -2,6 +2,7 @@ import Head from "next/head"
 import Navbar from "@/components/Navbar"
 import Hero from "@/components/Hero"
 import Featured from "@/components/Featured"
+import Footer from "@/components/Footer"
 
 import { getFeaturedDesigns } from "../lib/api"
 
@@ -14,6 +15,7 @@ export default function Home({ designs }) {
       <Navbar />
       <Hero />
       <Featured designs={designs} />
+      <Footer />
     </>
   )
 }

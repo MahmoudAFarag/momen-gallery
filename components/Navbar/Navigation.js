@@ -7,7 +7,7 @@ export default function Navigation() {
   return (
     <Breadcrumb
       separator=""
-      fontSize={{ base: "0.8rem", lg: "0.9rem" }}
+      fontSize={{ base: "0.8rem", lg: "0.87rem", "2xl": "0.9rem" }}
       textTransform="uppercase"
       m={4}
       fontFamily="primary"
@@ -46,7 +46,7 @@ export default function Navigation() {
       >
         <NextLink href="/contact">Contact</NextLink>
         <IconContext.Provider value={{ style: { marginLeft: "1rem" } }}>
-          <FaPhoneAlt />
+          <FaPhoneAlt cursor="pointer" />
         </IconContext.Provider>
       </BreadcrumbItem>
     </Breadcrumb>

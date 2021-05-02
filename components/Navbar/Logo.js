@@ -16,9 +16,8 @@ export default function Logo() {
     <NextLink href="/">
       <Link
         m="4"
-        fontFamily="primary"
-        fontSize={{ base: "1.2rem", lg: "1.5rem" }}
-        fontWeight="700"
+        fontFamily="bold"
+        fontSize={{ base: "1.2rem", lg: "1.4em" }}
         textTransform="uppercase"
         _after={headingAfterStyles}
         _hover={{ textDecoration: "none" }}
