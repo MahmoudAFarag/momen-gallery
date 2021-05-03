@@ -2,6 +2,9 @@ import "../public/global.css"
 import { useEffect } from "react"
 import { ChakraProvider } from "@chakra-ui/react"
 
+import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
+
 import AOS from "aos"
 import "aos/dist/aos.css"
 
@@ -14,19 +17,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider theme={theme}>
-      {/* <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        rel="preload"
-        as="style"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-        rel="stylesheet"
-        media="print"
-        onLoad={() => (this.media = "all")}
-      /> */}
+      <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </ChakraProvider>
   )
 }
