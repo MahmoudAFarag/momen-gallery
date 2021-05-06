@@ -1,15 +1,15 @@
-import { Flex, Link } from "@chakra-ui/react"
+import { Flex, Link } from '@chakra-ui/react'
 
-import { IconContext } from "react-icons"
-import { CgExternal } from "react-icons/cg"
+import { IconContext } from 'react-icons'
+import { CgExternal } from 'react-icons/cg'
 
 export default function SocialIcon({ media, fill, icon, link }) {
   return (
     <Flex alignItems="center" ml="1rem">
       <IconContext.Provider
         value={{
-          size: "2.2rem",
-          style: { display: "inline-block", fill },
+          size: '2.2rem',
+          style: { display: 'inline-block', fill },
         }}
       >
         {icon}
@@ -24,11 +24,11 @@ export default function SocialIcon({ media, fill, icon, link }) {
         Follow me on {media}!
         <IconContext.Provider
           value={{
-            size: "1.4rem",
+            size: '1.4rem',
             style: {
-              display: "inline-block",
-              fill: "blue",
-              marginLeft: "0.5rem",
+              display: 'inline-block',
+              fill: 'blue',
+              marginLeft: '0.5rem',
             },
           }}
         >

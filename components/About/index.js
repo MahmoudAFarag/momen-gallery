@@ -1,4 +1,4 @@
-import { Flex, Heading, VStack, StackDivider } from "@chakra-ui/react"
+import { Flex, VStack, StackDivider } from "@chakra-ui/react"
 
 import {
   SiAdobephotoshop,
@@ -7,7 +7,7 @@ import {
 } from "react-icons/si"
 import { FaFacebookSquare, FaInstagram, FaBehanceSquare } from "react-icons/fa"
 
-import { CgFigma, CgExternal } from "react-icons/cg"
+import { CgFigma } from "react-icons/cg"
 import Info from "./Info"
 import TechIcon from "./TechIcon"
 import SocialIcon from "./SocialIcon"

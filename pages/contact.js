@@ -1,7 +1,9 @@
+import Contact from '@/components/Contact'
+
 export default function contact() {
   return (
     <>
-      <h1>Contact Page</h1>
+      <Contact />
     </>
   )
 }
