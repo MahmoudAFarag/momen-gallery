@@ -8,6 +8,7 @@ import {
   Button,
   Alert,
   AlertIcon,
+  CloseButton,
 } from '@chakra-ui/react'
 import emailjs from 'emailjs-com'
 import { MdEmail } from 'react-icons/md'
@@ -49,6 +50,7 @@ export default function index() {
         <Alert status='success' variant='left-accent'>
           <AlertIcon />
           Your order is recieved. You will be contacted soon!
+          <CloseButton position='absolute' right='8px' top='8px' />
         </Alert>
       )}
 
